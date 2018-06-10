@@ -30,7 +30,7 @@ $id = $pdo->lastInsertId();
 
 $countOrdering = orderNew($pdo, $input["email"]);
 
-if($countOrdering > 1) {
+if ($countOrdering > 1) {
     $firstOrderdering = "Спасибо - это ваш первый заказ";
 } else {
     $firstOrderdering = "Спасибо! Это уже $countOrdering заказ";
